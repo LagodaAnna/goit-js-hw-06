@@ -22,7 +22,7 @@ function createBoxes(amount) {
   containerForBoxes.append(...arrayOfBoxes);
 }
 
-function takeValueFromInput() {
+function onCreateButtonClick() {
   createBoxes(refs.inputEl.value);
 }
 
@@ -31,7 +31,7 @@ function destroyBoxes() {
   refs.inputEl.value = '';
 }
 
-refs.btnCreateEl.addEventListener('click', takeValueFromInput);
+refs.btnCreateEl.addEventListener('click', onCreateButtonClick);
 refs.btnDestroyEl.addEventListener('click', destroyBoxes);
 
 // function getRandomHexColor() {
